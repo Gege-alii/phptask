@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CustomerTransaction } from './models/customer-transaction.model';
+import { environment } from './environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerTransactionService {
-  private apiUrl1 = 'http://localhost:3000/transactions'; // Replace with your actual API endpoint
+  private apiUrl1 = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 
