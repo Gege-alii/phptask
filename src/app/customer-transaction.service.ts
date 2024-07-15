@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CustomerTransaction } from './models/customer-transaction.model';
-import { environment } from './environment/environment';
+
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerTransactionService {
-  private apiUrl1 = environment.apiUrl;
+  private apiUrl1 = 'https://raw.githubusercontent.com/Gege-alii/data/main/data.json' ;
 
   constructor(private http: HttpClient) {}
 
