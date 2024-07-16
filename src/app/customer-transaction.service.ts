@@ -9,7 +9,7 @@ import { CustomerTransaction } from './models/customer-transaction.model';
   providedIn: 'root'
 })
 export class CustomerTransactionService {
-  private apiUrl1 = 'https://raw.githubusercontent.com/Gege-alii/data/main/data.json' ;
+  private apiUrl1 = 'http://localhost:3000/transactions';
 
   constructor(private http: HttpClient) {}
 

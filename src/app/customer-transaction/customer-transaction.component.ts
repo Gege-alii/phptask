@@ -10,7 +10,7 @@ import Chart from 'chart.js/auto';
   styleUrls: ['./customer-transaction.component.css']
 })
 export class CustomerTransactionComponent implements OnInit {
-  customerTransactions: CustomerTransaction[] = [];
+  customerTransactions: any[] = [];
   customerTotals: { name: string; totalAmount: number;}[] = [];
   filterText: string = '';
   selectedCustomer: string = '';
